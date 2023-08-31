@@ -7,15 +7,7 @@ def load_file(filename: str = "level1/input.1") -> list:
             number = int(ticket)
             numeric_tickets.append(number)
         return numeric_tickets
-     
-
-
-def write_to_file(data: list, filename: str = "level1/level1_1.out") -> None:
-    with open(filename, "w") as file:
-        for line in data:
-            file.write(line + "\n")
-
-
+    
 
 def counting_cars(tickets):
     current_count = 0
